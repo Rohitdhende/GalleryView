@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="icon" href="images/logo2.png" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="sign-up">
+			 <div class="form">
+			 	<div class="user">
+    				<img src="images/signup.png" width="55px" height="55px">
+    			</div>
+
+			    	<div class="group">      
+			      <input type="text" id="fullname" required="">
+			      <span class="highlight"></span>
+			      <span class="bar"></span>
+			      <label>Full Name</label>
+			   
+			    </div>
+			    <div class="group">      
+			      <input type="text" id="signup-email" required="">
+			      <span class="highlight"></span>
+			      <span class="bar"></span>
+			      <label>Email</label>
+			 
+			    </div>
+			
+			      
+			    <div class="group">      
+			      <input type="Password" id="signup-password" required="">
+			      <span class="highlight"></span>
+			      <span class="bar"></span>
+
+			      <label>Password</label>
+			      <!-- <i style="font-size:24px" class="fa">&#xf023;</i> -->
+			    </div>
+			  
+			    <button class="button" onclick="signUp()">
+					Submit
+					<div class="button__horizontal"></div>
+					<div class="button__vertical"></div>
+				</button>
+			</div>
+  			<div class="signin">
+  				<a href="signin.html">Have already one? Sign in</a>
+  			</div>
+		</div>
+		
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  
+    <script>
+        // Your web app's Firebase configuration
+		const firebaseConfig = {
+                apiKey: "AIzaSyDxGzFKEVosMzDqPQOxZ1cmWtt9_-VHKiM",
+                authDomain: "gallery-view-9261a.firebaseapp.com",
+                projectId: "gallery-view-9261a",
+                storageBucket: "gallery-view-9261a.appspot.com",
+                messagingSenderId: "526857707919",
+                appId: "1:526857707919:web:9350226edd168761eaabfa"
+            };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+        //make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      
+         //update firestore settings
+         db.settings({timestampsInSnapshots:true});
+
+      </script>
+	<script src="js/auth.js"></script>
+	
+</body>
+</html>

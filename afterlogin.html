@@ -1,0 +1,297 @@
+<html>
+<head>
+	<title>:: GRAPHIC DESIGNER ::</title>
+	<link rel="icon" href="images/logo2.png" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Cantarell|Roboto+Slab|Rubik&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>    
+    <script src="js/e-search.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    
+
+
+</head>
+<body>		
+	<!-- Preloader -->
+	<!-- <div class="preloader"></div> -->
+
+	<!-- Section1 Starts here -->
+	<section class="section1" id="section01">
+		<header>
+        	<div class="menu-toggle" id="hamburger">
+            	<i class="fas fa-bars"></i>
+       		</div>
+
+        	<div class="overlay"></div>
+        	<div class="container">
+	            <nav id="myTopnav">
+	            	<div class="gif">
+	            		<img  src="images/left.gif" height="55px">
+	            	</div>
+	            	
+	                <div class="logo">
+	    				<img  src="images/logo2.png" width="40px" height="40px">
+	    			</div>
+	    			<div class="search-box">
+	     				<input class="search-txt" type="text"  placeholder="Type to search">
+	     			<a class="search-btn" href="#"><i class="fas fa-search"></i>
+	     			</a>	
+	     			</div>
+	                <ul class="topnav" id="dropdownClick">
+                        <li><a href="#" id="signedinusername"></a></li>
+	                    <li><a href="#section03">Contact</a></li>
+                        <li><a href="#section04">About</a></li>
+                        <li><a href="#" onclick="signout()">Logout</a></li>
+	                </ul>
+	            </nav>
+       	 	</div>
+       	 	<div class="container2">
+	       	 	<span class="text1">
+					<h1>Explore Yourself</h1>
+				</span>
+				<span class="text2">
+					Become more creative
+				</span>
+
+			</div>
+			<div class="indicator">
+				<a href="#section02"><span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span></a>
+			</div>
+			<div class="start-exploring">
+				<a href="#section02">Start Exploring</a>
+			</div>
+		</header>
+	</section>
+
+	<!-- Section2 Starts here -->
+	<section  class="section2" id="section02">
+		<div class="row containerItems" 
+        style="display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; ">
+            <div class="card middle"  data-search = "lion" data-filter="lion">
+                <div class="front">
+                    <img src="images/lion.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Lion</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/lion.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "spiderman">
+                <div class="front">
+                    <img src="images/spiderman1.jpg" alt="" >
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Spider Man</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus"  href="images/spiderman1.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "spiderman">
+                <div class="front">
+                    <img src="images/spiderman2.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Spider Man</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus"  href="images/spiderman1.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "spiderman">
+                <div class="front">
+                    <img src="images/spiderman3.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Spider Man</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/spiderman3.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "ironman">
+                <div class="front">
+                    <img src="images/ironman1.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Iron Man</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/ironman1.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "ironman">
+                <div class="front">
+                    <img src="images/ironman2.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Iron Man</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus"  href="images/ironman2.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "ironman">
+                <div class="front">
+                    <img src="images/ironman3.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Iron Man</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/ironman3.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "cat">
+                <div class="front">
+                    <img src="images/cat1.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Cat</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/cat1.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "cat">
+                <div class="front">
+                    <img src="images/cat2.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Cat</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/cat2.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card middle"  data-search = "cat">
+                <div class="front">
+                    <img src="images/cat3.jpg" alt="">
+                </div>
+                <div class="back">
+                    <div class="back-content middle">
+                        <h2>Cat</h2>
+                        <span>Download</span>
+                        <div class="sm">
+                            <a class="plus" href="images/cat3.jpg" download><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+	</section>
+
+	<!-- Section3 Starts here -->
+	<section  class="section3" id="section03">
+		<div class="contact-us">
+			<div class="contact">
+		    	Contact Me
+		    </div>
+			<div class="form" id="form">
+				<div class="name-labelName">Name</div> : <input class="fname" type="text" name="Name" id="form-name" value=""><br>
+				<div class="name-labelEmail">Email :</div> <input class="email" type="text" name="Email" id="form-email"  value=""><br>
+				<div class="name-labelSub">Subject :</div> <input class="sub" type="text" name="Subject" id="form-subject"  value=""><br>
+				<div class="name-labelMsg">Message:</div> <br><textarea class="msg" name="Message" id="form-message"  value="" rows="4" cols="50"></textarea><br>
+				<a class="submit" onclick="submitResponse()">Submit</a> <br>
+                <span id="reply"></span>
+            </div>
+		</div>
+
+	</section>
+
+	<!-- Section4 Starts here -->
+	<section  class="section4" id="section04">
+        <h1 class="about-section">Hi! This is Rohit Dhende here<br>
+            I made this Gallery View Website for downloading High Quality images.<br>
+          For downloading it, you need to sign-in first and then you are free to download it.</h1>
+          <br>
+     <a class="sayhitome" href="#section03"><img src="images/sayhitome.png" height="200px"/></a>
+	</section>
+
+	<!-- Section5 Starts here -->
+	<section  class="section5" id="section05">
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/backtotop.png" height="50px"></button>
+	</section>
+<script src="js/main.js">
+    </script>
+
+    <script>
+        $('.search-txt').search({
+
+        })
+
+    </script>
+    	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+                apiKey: "AIzaSyDxGzFKEVosMzDqPQOxZ1cmWtt9_-VHKiM",
+                authDomain: "gallery-view-9261a.firebaseapp.com",
+                projectId: "gallery-view-9261a",
+                storageBucket: "gallery-view-9261a.appspot.com",
+                messagingSenderId: "526857707919",
+                appId: "1:526857707919:web:9350226edd168761eaabfa"
+            };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+        //make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      
+         //update firestore settings
+         db.settings({timestampsInSnapshots:true});
+      </script>
+<script src="js/afterlogin.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
